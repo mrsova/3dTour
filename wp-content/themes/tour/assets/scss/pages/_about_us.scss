@@ -1,0 +1,123 @@
+/* ========================================================================== */
+/* ABOUT_US                                                                     */
+/* ========================================================================== */
+
+.about-us {
+
+  &__banner {
+    background: $c-black url(../img/about_us/About_Us2-1920x553.jpg) no-repeat 50% 50% / cover;
+    height: 533px;
+    position: relative;
+
+    @media (max-width: $tablet-h) {
+      background: $c-black url(../img/about_us/About_Us2-1024x553.jpg) no-repeat 50% 50% / cover;
+    }
+
+    @media (max-width: $tablet-v) {
+      background: $c-black url(../img/about_us/About_Us2-768x553.jpg) no-repeat 50% 50% / cover;
+    }
+
+    @media (max-width: $mobile-h) {
+      background: $c-black url(../img/about_us/About_Us2-667x277.jpg) no-repeat 50% 50% / cover;
+      height: 277px;
+    }
+
+    @media (max-width: $mobile-v) {
+      background: $c-black url(../img/about_us/About_Us2-375x381.jpg) no-repeat 50% 50% / cover;
+      height: 381px;
+    }
+  }
+
+  &__info {
+    background: #eeeeee;
+  }
+
+  &__wraper {
+    @extend %wrap;
+  }
+
+  &__header {
+    text-align: left;
+    position: relative;
+    padding-top: 94px;
+
+    &:before {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 30px;
+      margin: 0;
+      display: block;
+      content: "";
+      width: 148px;
+      height: 10px;
+      background: $c-blue2;
+
+      @media (max-width: $mobile-h) {
+        width: 100px;
+        height: 6px;
+        left: 10px;
+      }
+    }
+
+    @media (max-width: $tablet-h) {
+      padding-top: 60px;
+    }
+
+    @media (max-width: $mobile-v) {
+      padding-top: 30px;
+      margin-bottom: 30px;
+      padding-bottom: 15px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 70px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $c-grey3;
+    line-height: 2.2em;
+
+    @media (max-width: $tablet-h) {
+      font-size: 50px;
+    }
+
+    @media (max-width: $tablet-v) {
+      font-size: 40px;
+    }
+
+    @media (max-width: $mobile-h) {
+      font-size: 30px;
+    }
+  }
+
+  &__body {
+    padding: 68px 0 123px;
+
+    @media (max-width: $min-mobile-h) {
+      padding: 30px 0 60px;
+    }
+  }
+
+  &__text {
+    line-height: 2.5em;
+    margin-bottom: 32px;
+
+    @media (max-width: $tablet-h) {
+      font-size: 16px;
+      line-height: 2em;
+    }
+
+    @media (max-width: $mobile-h) {
+      font-size: 14px;
+    }
+  }
+
+  &__quote {
+    font-size: 35px;
+    line-height: 1.3em;
+    color: $c-blue;
+    margin: 0px 9% 32px;
+  }
+}

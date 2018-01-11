@@ -1,0 +1,9 @@
+{
+    "extends": [
+      "stylelint-config-standard",
+      "stylelint-config-lost"
+    ],
+    "rules": {
+      "selector-pseudo-element-colon-notation": "single"
+    }
+}
