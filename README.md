@@ -1,7 +1,7 @@
 ANTI-DRONE
 =====================
 
-http://antidron.office.gresso.ru:8083/
+http://tour
 
 HTML проект
 
